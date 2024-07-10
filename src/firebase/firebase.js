@@ -1,38 +1,16 @@
-import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
-import { getStorage } from "firebase/storage";
-
-const firebaseConfig = {
-    apiKey: "AIzaSyATUB6fY43VmeNZ_rWg-bOFGlx-5_aBgQg",
-    authDomain: "instagram-clone-b0cb4.firebaseapp.com",
-    projectId: "instagram-clone-b0cb4",
-    storageBucket: "instagram-clone-b0cb4.appspot.com",
-    messagingSenderId: "349908647605",
-    appId: "1:349908647605:web:153ed7afa855e0187808fc",
-    measurementId: "G-4JRWVL7JFD",
-};
-
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const firestore = getFirestore(app);
-const storage = getStorage(app);
-
-export { app, auth, firestore, storage };
-
 // import { initializeApp } from "firebase/app";
 // import { getAuth } from "firebase/auth";
 // import { getFirestore } from "firebase/firestore";
 // import { getStorage } from "firebase/storage";
 
 // const firebaseConfig = {
-// 	apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-// 	authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-// 	projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-// 	storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-// 	messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-// 	appId: import.meta.env.VITE_FIREBASE_APP_ID,
-// 	measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
+//     apiKey: "AIzaSyATUB6fY43VmeNZ_rWg-bOFGlx-5_aBgQg",
+//     authDomain: "instagram-clone-b0cb4.firebaseapp.com",
+//     projectId: "instagram-clone-b0cb4",
+//     storageBucket: "instagram-clone-b0cb4.appspot.com",
+//     messagingSenderId: "349908647605",
+//     appId: "1:349908647605:web:153ed7afa855e0187808fc",
+//     measurementId: "G-4JRWVL7JFD",
 // };
 
 // const app = initializeApp(firebaseConfig);
@@ -41,3 +19,25 @@ export { app, auth, firestore, storage };
 // const storage = getStorage(app);
 
 // export { app, auth, firestore, storage };
+
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
+
+const firebaseConfig = {
+	apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+	authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+	projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+	storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+	messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+	appId: import.meta.env.VITE_FIREBASE_APP_ID,
+	measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const firestore = getFirestore(app);
+const storage = getStorage(app);
+
+export { app, auth, firestore, storage };
